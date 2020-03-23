@@ -94,7 +94,7 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker:
-          docker_layer_caching: true
+          docker_layer_caching: false
       - run: 
           name: Pull base image updates
           command: docker pull registry.access.redhat.com/ubi8/ubi-minimal:latest
